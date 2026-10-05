@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odomark – servisní knížka / car service log</title>
+<meta name="description" content="Odomark – servisní knížka: aplikace pro Android pro evidenci servisu a nákladů na vozidlo. Data zůstávají ve vašem zařízení. / Odomark – car service log: an Android app for vehicle maintenance and running costs. Your data stays on your device.">
+<style>
+  :root { --bg:#f6f7f9; --fg:#14181f; --muted:#5b6472; --card:#ffffff; --line:#d9dee6; --accent:#1f5fbf; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12151a; --fg:#e8ebf0; --muted:#9aa4b2; --card:#1b2028; --line:#2c3440; --accent:#7fb0ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height:1.55; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  a { color:var(--accent); }
+  h1 { font-size:1.7em; margin:0 0 4px; }
+  h2 { font-size:1.2em; margin:1.8em 0 .5em; }
+  .tag { color:var(--muted); margin:0 0 1em; }
+  .langnav { font-size:.95em; margin:0 0 20px; }
+  .grid { display:grid; gap:12px; grid-template-columns:1fr; }
+  @media (min-width:600px) { .grid { grid-template-columns:1fr 1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .card h3 { margin:0 0 6px; font-size:1.05em; }
+  .card ul { margin:0; padding-left:1.2em; }
+  .note { color:var(--muted); font-size:.92em; }
+  hr { border:0; border-top:1px solid var(--line); margin:40px 0 8px; }
+  footer { color:var(--muted); font-size:.9em; margin-top:28px; }
+</style>
+</head>
+<body>
+<main>
+
+<p class="langnav"><a href="#cs">Česky</a> · <a href="#en">English</a></p>
+
+<section id="cs" lang="cs">
+  <h1>Odomark – servisní knížka</h1>
+  <p class="tag">Servis a provozní náklady vašeho vozidla. Záznamy zůstávají ve vašem zařízení.</p>
+
+  <h2>Co to je</h2>
+  <p>Odomark je aplikace pro Android, ve které si vedete servisní historii a náklady na vozidlo: servis, tankování se spotřebou v l/100 km, pojištění, STK, pneumatiky a další úkony. Aplikace hlídá i termíny a stav tachometru a připomene, co se blíží.</p>
+  <p>Bez účtu, bez reklam, bez analytiky. Záznamy, vozidla, připomínky a fotky jsou uložené v zařízení (Android je může zálohovat do vašeho účtu Google). Nic se neodesílá, dokud to sami nespustíte (export, sdílení).</p>
+  <p class="note">Aplikace se připravuje pro Android. Odkaz na Google Play přibude po vydání.</p>
+
+  <h2>Zdarma a Pro</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Zdarma</h3>
+      <ul>
+        <li>1 vozidlo</li>
+        <li>neomezený počet záznamů</li>
+        <li>připomínky</li>
+        <li>export do JSON a CSV</li>
+        <li>ruční výměna a sloučení dat (JSON) s dalším uživatelem</li>
+        <li>připojení ke sdílenému deníku (až bude hotový)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Pro – jednorázově 4,99 EUR</h3>
+      <ul>
+        <li>neomezený počet vozidel</li>
+        <li>fotky u záznamů</li>
+        <li>PDF report</li>
+        <li>vytvoření sdíleného deníku (až bude hotový)</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Pro se kupuje jednou přes Google Play, ne jako předplatné. Platbu zpracovává Google. Cena v místní měně se zobrazí v Google Play.</p>
+
+  <h2>Sdílený deník (plánováno)</h2>
+  <p>Zatím není hotový. Půjde o jeden soubor ve vašem vlastním Google Disku, ke kterému se přihlásíte přes Google. Aplikace uvidí jen tento soubor. Data nikdy neprocházejí přes vývojáře a žádný server neexistuje. Podrobnosti jsou v <a href="privacy.html#cs">zásadách ochrany osobních údajů</a>.</p>
+
+  <h2>Kontakt a vydavatel</h2>
+  <p>Vydavatel: J.nek (vývojář na Google Play)<br>
+  Podpora a dotazy: <a href="mailto:janek.amazement@gmail.com">janek.amazement@gmail.com</a></p>
+  <p><a href="privacy.html#cs">Zásady ochrany osobních údajů</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+  <h1>Odomark – car service log</h1>
+  <p class="tag">Maintenance and running costs for your vehicle. Your records stay on your device.</p>
+
+  <h2>What it is</h2>
+  <p>Odomark is an Android app for keeping a service history and the costs of your vehicle: service, refuelling with consumption in l/100 km, insurance, inspection, tyres and other jobs. It also tracks due dates and odometer readings and reminds you of what is coming up.</p>
+  <p>No account, no ads, no analytics. Records, vehicles, reminders and photos are stored on the device (Android may back them up to your Google account). Nothing is sent anywhere until you trigger it yourself (export, share).</p>
+  <p class="note">The app is being prepared for Android. A Google Play link will be added after release.</p>
+
+  <h2>Free and Pro</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Free</h3>
+      <ul>
+        <li>1 vehicle</li>
+        <li>unlimited records</li>
+        <li>reminders</li>
+        <li>export to JSON and CSV</li>
+        <li>manual JSON exchange and merge with another user</li>
+        <li>joining a shared log (once it is ready)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Pro – one-time 4.99 EUR</h3>
+      <ul>
+        <li>unlimited vehicles</li>
+        <li>photo attachments</li>
+        <li>PDF report</li>
+        <li>creating a shared log (once it is ready)</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Pro is bought once through Google Play, not as a subscription. Google processes the payment. The price in your local currency is shown in Google Play.</p>
+
+  <h2>Shared log (planned)</h2>
+  <p>Not built yet. It will be a single file in your own Google Drive, and you sign in with Google to use it. The app will see only that file. Your data never passes through the developer, and there is no server. Details are in the <a href="privacy.html#en">privacy policy</a>.</p>
+
+  <h2>Contact and publisher</h2>
+  <p>Publisher: J.nek (developer name on Google Play)<br>
+  Support and questions: <a href="mailto:janek.amazement@gmail.com">janek.amazement@gmail.com</a></p>
+  <p><a href="privacy.html#en">Privacy policy</a></p>
+</section>
+
+<footer>Tato stránka sama nenačítá žádné skripty, externí písma ani sledovací nástroje. / This page itself loads no scripts, external fonts or trackers.</footer>
+</main>
+</body>
+</html>
